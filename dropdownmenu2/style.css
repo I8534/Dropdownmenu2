@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+  /* 끝으로 보내버리는 거 */
+  height: 50px;
+  line-height: 50px;
+}
+
+.main-menu li {
+  width: 150px;
+  background-color: rgb(62, 62, 213)
+}
+
+
+.main-menu li a:hover, .main-menu li a.on {
+  display: block;
+  background-color: aquamarine
+}
+
+.drop-down {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: cornflowerblue;
+}
+
+/* 
+여기 주의해서 보기 드롭다운으로 표현할 서브메뉴
+ul리스트를 만들어서 li를 여러개를 만든 다음에
+  display: flex;
+  justify-content: flex-end;
+로 바로 메인메뉴 목록 밑으로 정렬시킨 것이 핵심이다.
+*/
+
+.sub {
+  width: 150px;
+}
+
+.sub li {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+}
+
+.sub li a {
+  display: block;
+  color: white;
+}
+
+.sub li a:hover {
+  background-color: #ddd;
+}
+
+
+
